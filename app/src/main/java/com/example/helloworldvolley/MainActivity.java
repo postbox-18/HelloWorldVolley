@@ -30,6 +30,8 @@ public class MainActivity<TAG> extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         helo=findViewById(R.id.hello);
+        //https://www.tutorialspoint.com/how-to-use-simple-volley-request-in-android
+        //https://www.section.io/engineering-education/making-api-requests-using-volley-android/
         StringRequest stringRequest=new StringRequest(Request.Method.GET,url,response -> {
             try {
                 Log.e(TAG,"Response"+response);
